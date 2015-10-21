@@ -32,6 +32,8 @@ void setup()
     Serial.println(F("Found HX8347G LCD driver"));
   } else if(identifier == 0x9341) {
     Serial.println(F("Found ILI9341 LCD driver"));
+  } else if(identifier == 0x0101) {
+    Serial.println(F("Found unknown clone LCD driver"));
   } else {
     Serial.print(F("Unknown LCD driver chip: "));
     Serial.println(identifier, HEX);
